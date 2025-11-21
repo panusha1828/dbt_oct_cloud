@@ -43,12 +43,6 @@ models:
       - name: updated_at
         data_type: timestamp
 
-
-        description: '{{ doc("primary_key") }}'
-        tests:
-          - unique
-          - not_null
-
       - name: region_id
         data_type: int
 
