@@ -1,3 +1,11 @@
+{{
+    config(
+        tags = ['sample']
+           )
+}}
+
+
+
 with
     customer as (
         select
@@ -16,4 +24,4 @@ with
     )
 
 select *
-from customer limit 100
+from customer

@@ -3,8 +3,7 @@ select
     n.nation_id,
     n.name as n_name,
     r.name as r_name,
-    n.region_id,
-    n.comment
+    n.region_id
 from {{ ref('stg_nations') }} 
 as n
 join {{ ref('stg_regions') }} 
