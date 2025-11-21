@@ -1,0 +1,27 @@
+mkmall:
+  outputs:
+    dev:
+      account: PZB96233
+      database: analytics
+      password: Sachin$123
+      role: analyticsengineer
+      schema: dbt_anusha
+      threads: 3
+      type: snowflake
+      user: sachin
+      warehouse: transform_wh
+  target: dev
+
+dbt_cloud:
+  outputs:
+    dev:
+      account: PZB96233
+      database: analytics
+      password: Sachin$123
+      role: analyticsengineer
+      schema: dbt_peruri
+      threads: 3
+      type: snowflake
+      user: sachin
+      warehouse: transform_wh
+  target: dev
