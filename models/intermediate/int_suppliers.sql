@@ -41,15 +41,19 @@ select
     sup.supplier_name,
     sup.supplier_address,
     sup.phone_number,
+    sup.comment,
     sup.account_balance,
+
 
     -- Nation
     nat.nation_name,
-    nat.region_id,
+    --nat.region_id,
 
     -- Region
     reg.region_name,
-    reg.region_comment
+    --reg.region_comment
+       sup.updated_time
+
 
 from sup
 join nat on sup.nation_id = nat.nation_id

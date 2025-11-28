@@ -45,14 +45,13 @@ models:
 
       - name: region_id
         data_type: int
-
-
         description: '{{ doc("foregin_key") }}'
         tests:
           - relationships:
               arguments:
                 to: ref('stg_regions')
                 field: region_id
+                
   - name: stg_customers
     config:
       group: sales
